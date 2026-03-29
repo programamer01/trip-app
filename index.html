@@ -2,6 +2,15 @@
 <html>
 <head><title>旅行プランアプリ</title></head>
 <body><h1>旅行プラン提案アプリ</h1>
-<p>ここからはじまる</p>
+  <input type="text" id="place" placeholder="行先">
+  <button onclick="makePlan()">作る</button>
+  
+<p id=result></p>
+
+  <script>
+    function makePlan(){
+      const place = document.getElementById("place").value;
+      document.getElementById("result").innerText = place + "の旅行プランを考えました！";}
+  </script>
 </body>
 </html>
